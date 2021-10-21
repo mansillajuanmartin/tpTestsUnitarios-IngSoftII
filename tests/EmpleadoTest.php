@@ -8,7 +8,6 @@
 			$c = new \App\Empleado ($nombre, $apellido, $dni, $salario, $sector);
 			return $c;
 		}
-
 		//Tests 1/7: Nombre Y Apellido
 		public function testSePuedeCrearYObtenerNombreYApellido(){
 			$e = $this->crear();
