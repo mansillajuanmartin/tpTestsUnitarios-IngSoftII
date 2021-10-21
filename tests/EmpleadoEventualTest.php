@@ -9,12 +9,12 @@
 							   $ee = new \App\EmpleadoEventual($nombre,$apellido, $dni, $salario, $montos);
 							   return $ee;
 		}
-        //Tests 1/3: Calcular comision
+        //Tests 1/3: calcularComision()
 		public function testLaComisionPorVentasFuncionaCorrectamente(){
 			$ee= $this->crear(); //(100+150+200+250)/4)*0,05 = 8,75
 			$this-> assertEquals(8.75,$ee->calcularComision()); 
 		}
-        //Tests 2/3: Calcular ingreso total
+        //Tests 2/3: calcularIngresoTotal() 
 		public function testElCalculoDelIngresoTotalEsCorrecto(){
 			$ee=$this->crear();
 			$this->assertEquals(5008.75,$ee->calcularIngresoTotal());
