@@ -1,0 +1,20 @@
+{
+    "name": "lenovo/tp-tests-unitarios",
+    "description": "Poniendo a mi proyecto Composer",
+    "type": "project",
+    "license": "GPL",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app"
+        }
+    },
+    "authors": [
+        {
+            "name": "JuanMartinMansilla",
+            "email": "mansillajuanmartin18@gmail.com"
+        }
+    ],
+    "require": {
+        "phpunit/phpunit": "^9.5"
+    }
+}
