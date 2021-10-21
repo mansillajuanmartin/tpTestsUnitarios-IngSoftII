@@ -8,6 +8,7 @@
 			$fecha = new \DateTime();
 			$ep = new \App\EmpleadoPermanente($nombre, $apellido, $dni, $salario, $fechaIngreso);
 			return $ep;
+            return "Hola";
 		}
 		//Tests 1/6: getFechaIngreso()
 		public function testSePuedeCrearYObtenerFechaIngreso(){
