@@ -2,7 +2,7 @@
 
 	abstract class EmpleadoTest extends \PHPUnit\Framework\TestCase{
 
-		// Valores por defecto
+		// Funcion crear
 		public function crear ($nombre = "Pascual", $apellido = "Simonet", $dni = 12345678, $salario = 1000, $sector = "indefinido")
 		{
 			$e = new \App\Empleado ($nombre, $apellido, $dni, $salario, $sector);

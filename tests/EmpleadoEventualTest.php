@@ -2,6 +2,7 @@
 	require_once 'EmpleadoTest.php';
 	
     class EmpleadoEventualTest extends EmpleadoTest{
+        //Funcion Crear
 		public function crear(  $nombre='Emanuel', $apellido ='Montoto', $dni=30, $salario = 5000,
 								$montos = [100,150,200,250]){
 
