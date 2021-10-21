@@ -5,8 +5,8 @@
 		// Valores por defecto
 		public function crear ($nombre = "Pascual", $apellido = "Simonet", $dni = 12345678, $salario = 1000, $sector = "indefinido")
 		{
-			$c = new \App\Empleado ($nombre, $apellido, $dni, $salario, $sector);
-			return $c;
+			$e = new \App\Empleado ($nombre, $apellido, $dni, $salario, $sector);
+			return $e;
 		}
 		//Tests 1/7: Nombre Y Apellido
 		public function testSePuedeCrearYObtenerNombreYApellido(){
