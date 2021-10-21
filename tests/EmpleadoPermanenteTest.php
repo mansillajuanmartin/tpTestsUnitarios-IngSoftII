@@ -4,7 +4,7 @@
 	class EmpleadoPermanenteTest extends EmpleadoTest{
 		
 		//Funcion crear
-		public function crear($nombre="Emanuel", $apellido="Montoto", $dni=30, $salario=5000, $fechaIngreso=null){
+		public function crear($nombre="Emanuel", $apellido="Montoto", $dni=30852963, $salario=5000, $fechaIngreso=null){
 			$fecha = new \DateTime();
 			$ep = new \App\EmpleadoPermanente($nombre, $apellido, $dni, $salario, $fechaIngreso);
 			return $ep;
@@ -19,21 +19,21 @@
 		public function testCalcularComisionEnBaseALaAntiguedad(){
 			$ingreso = new DateTime();
 			$ingreso->modify('-10 years');
-			$ep= $this->crear('Emanuel','Montoto','30','5000', $ingreso); 
+			$ep= $this->crear('Emanuel','Montoto','30852963','5000', $ingreso); 
 			$this->assertEquals("10%",$ep->calcularComision());
 		}
         //Tests 3/6: calcularIngresoTotal()
 		public function testSePuedeCalcularElIngresoTotal(){
 			$ingreso = new DateTime();
 			$ingreso->modify('-10 years');
-			$ep= $this->crear('Emanuel','Montoto','30','5000', $ingreso); 
-			$this->assertEquals(4400,$ep->calcularIngresoTotal());
+			$ep= $this->crear('Emanuel','Montoto','30852963','5000', $ingreso); 
+			$this->assertEquals(5500,$ep->calcularIngresoTotal());
 		}
 		//Tests 4/6: calcularAntiguedad() 
 		public function testSePuedeCalcularAntiguedad(){
 			$ingreso = new DateTime();
 			$ingreso->modify('-10 years');
-			$ep= $this->crear('Emanuel','Montoto','30','5000', $ingreso);
+			$ep= $this->crear('Emanuel','Montoto','30852963','5000', $ingreso);
 			$this->assertEquals(10,$ep->calcularAntiguedad());
 		}
         //Test 5/6: Empleado sin proporcionar la fecha de ingreso. (No supe Resolverlo)
@@ -43,7 +43,7 @@
 			$ingreso = new DateTime();
 			$ingreso->modify('+10 years'); //le sumo 10 años a la fecha creada
 			$this->expectException(\Exception::class);
-			$ep= $this->crear('Emanuel','Montoto','30','5000', $ingreso); //tiro la excepcion al instanciar
+			$ep= $this->crear('Emanuel','Montoto','30852963','5000', $ingreso); //tiro la excepcion al instanciar
 		}
 		
 	}

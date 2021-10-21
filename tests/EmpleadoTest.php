@@ -16,7 +16,7 @@
 		//Tests 1/7: DNI
 		public function testSePuedeCrearYObtenerDNI(){
 			$e = $this->crear();
-			$this->assertEquals(30, $e->getDNI());
+			$this->assertEquals(30852963, $e->getDNI());
 		}
 		//Tests 1/7: Salario
 		public function testSePuedeCrearyObtenerElSalario(){
@@ -36,7 +36,7 @@
 		// Test 1/7: __toString
 		public function testSePuedeConvertirElObjetoEnUnaCadena(){
 			$e=$this->crear();
-			$this->assertEquals("Emanuel Montoto 30 5000",$e);
+			$this->assertEquals("Emanuel Montoto 30852963 5000",$e);
 		}
         // Test 2/7: Nombre vacio
 		public function testExcepcionSiSeCreaEmpleadoConNombreVacio(){

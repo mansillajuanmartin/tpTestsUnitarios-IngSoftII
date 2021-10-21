@@ -3,7 +3,7 @@
 	
     class EmpleadoEventualTest extends EmpleadoTest{
         //Funcion Crear
-		public function crear(  $nombre='Emanuel', $apellido ='Montoto', $dni=30, $salario = 5000,
+		public function crear(  $nombre='Emanuel', $apellido ='Montoto', $dni=30852963, $salario = 5000,
 								$montos = [100,150,200,250]){
 
 							   $ee = new \App\EmpleadoEventual($nombre,$apellido, $dni, $salario, $montos);
