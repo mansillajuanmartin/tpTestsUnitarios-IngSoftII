@@ -36,7 +36,7 @@
 			$ep= $this->crear('Emanuel','Montoto','30','5000', $ingreso);
 			$this->assertEquals(10,$ep->calcularAntiguedad());
 		}
-        //Test 5/6: Empleado sin proporcionar la fecha de ingreso
+        //Test 5/6: Empleado sin proporcionar la fecha de ingreso. (No supe Resolverlo)
         
         //Tests 6/6: Fecha de ingreso posterior a la de hoy, excepción
 		public function testNoSePuedeCrearConFechaPosteriorAlDiaDeHoy(){
